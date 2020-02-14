@@ -1,0 +1,38 @@
+<form #conversationForm="ngForm" (ngSubmit)="conversationForm.valid && onSubmit(conversationForm)">
+
+    <div class="form-group">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Name" [(ngModel)]="model.name" #name="ngModel"
+        [ngClass]="{ 'is-invalid': conversationForm.submitted && name.invalid }" required>
+
+        <div *ngIf="conversationForm.submitted && name.invalid" class="invalid-feedback">
+
+            <div *ngIf="name.errors.required">Name is required</div>
+        </div>
+</div>
+
+<div class="form-group">
+        <input type="text" id="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="model.email" #email="ngModel"
+        [ngClass]="{ 'is-invalid': conversationForm.submitted && email.invalid }" required email>
+
+        <div *ngIf="conversationForm.submitted && email.invalid" class="invalid-feedback">
+            <div *ngIf="email.errors.required">Email is required</div>
+            <div *ngIf="email.errors.email">Email must be a valid email address</div>
+        </div>
+        Will not be published
+</div>
+
+
+<div class="form-group">
+        <input type="text" id="message" name="message" class="form-control" placeholder="Message" [(ngModel)]="model.message" #message="ngModel"
+        [ngClass]="{ 'is-invalid': conversationForm.submitted && message.invalid }" required>
+
+        <div *ngIf="conversationForm.submitted && message.invalid" class="invalid-feedback">
+
+            <div *ngIf="message.errors.required">Message is required</div>
+        </div>
+</div>
+
+    <p>
+        <button type="submit" class="btn btn-primary mr-1">Send</button>
+      </p>
+</form>

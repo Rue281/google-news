@@ -1,0 +1,22 @@
+<router-outlet></router-outlet>
+<h1>{{title}}</h1>
+<p>By <span>{{author}}</span> Published on {{publishedAt}}</p>
+<img src="{{urlToImage}}" alt="news image">
+<p>{{description}}</p>
+<div class="buttons">
+    <button class="left">I found this helpful</button>
+    <button class="right">I did not find this helpful</button>
+</div>
+<div>
+    <h4>Comments</h4>
+    <ul *ngFor="let comment of comments">
+        <li>
+            <img src="{{comment.image}}" alt="profile picture">
+            <h6>{{comment.name}}</h6>
+            <p>{{comment.date}} <span> Reply</span></p>
+            <p>{{comment.text}}</p>
+        </li>
+    </ul>
+</div>
+<div>join the conversation</div>
+<app-form></app-form>
