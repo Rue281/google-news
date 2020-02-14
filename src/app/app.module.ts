@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { NewsDetailsComponent } from './news-details/news-details.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { FormComponent } from './form/form.component';
+import { HeaderComponent } from './header/header.component';
 
 // const routes: Routes = [
 //   {path: '', component: AppComponent},
@@ -23,6 +24,7 @@ import { FormComponent } from './form/form.component';
     NewsDetailsComponent,
     NewsListComponent,
     FormComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

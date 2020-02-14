@@ -1,2 +1,4 @@
-/* li{display: flex;
-flex-wrap: wrap;} */
+html,body{
+    height: 100%;
+    margin: 0;
+}
