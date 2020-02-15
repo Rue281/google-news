@@ -13,13 +13,17 @@
     <h4>Comments</h4>
     <ul *ngFor="let comment of comments">
         <li>
+            <div class="data">
             <img src="{{comment.image}}" alt="profile picture">
-            <h6>{{comment.name}}</h6>
+            <p>{{comment.name}}</p>
             <p>{{comment.date}} <span> Reply</span></p>
-            <p>{{comment.text}}</p>
+        </div>
+            <p class="text">{{comment.text}}</p>
         </li>
     </ul>
 </div>
-<div>join the conversation</div>
+<div class="form">
+    <h4>join the conversation</h4>
 <app-form></app-form>
+</div>
 </div>

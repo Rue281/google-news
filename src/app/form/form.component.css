@@ -1,0 +1,25 @@
+form{
+    padding: 0 45px;
+}
+#name, .left{
+    width: 40%;
+}
+.container{
+    width: 100%;
+    padding-left: initial;
+}
+.left{
+    float: left;
+    
+}
+.right{
+    float:left;
+    margin-left: 20px;
+    padding-top: 5px;
+    color: #AEAEAE;
+    font-style: italic;
+}
+#message{
+    height: 150px;
+    resize: vertical;
+}

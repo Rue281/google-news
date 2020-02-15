@@ -12,7 +12,8 @@ h1{
     color: #C3C2BE;
     padding-bottom: 40px;
 }
-.author{
+span.author{
+   text-transform: capitalize;
     color: red;
 
 }
@@ -39,9 +40,11 @@ img{    width: inherit;
      margin-left: 30px;
  }
 
- .comments h4{
+ .comments h4, .form h4{
+   text-transform: capitalize;
     padding-top: 40px;
     padding-bottom: 20px;
+    padding-left: 40px;
     font-size: 30px;
  }
 
@@ -55,8 +58,41 @@ img{    width: inherit;
     padding: 30px;
 
  }
+ .data{display:flex;
+flex-wrap: wrap;}
 
- li img{
+ .data img{
     max-height: 60px;
     border-radius: 30px;
  }
+
+ .data p{
+     padding-top:20px;
+ }
+
+ .data p:first-of-type{
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+ }
+
+ .data p:last-child{
+    color: #AEAEAE;
+    padding-right:30px;
+ }
+
+ .data span{
+     padding-left:30px;
+ }
+
+ li .text{
+   padding-left: 130px;
+
+
+ }
+ /* .form h4{
+    text-transform: capitalize;
+    font-size: 30px;
+
+    padding: 40px 45px 20px;
+ } */
