@@ -18,7 +18,7 @@ export class NewsDetailsComponent implements OnInit {
   content: string;
 
   comments = [
-    {image: 'assets/images/anonymous.jpg',
+    {image: 'assets/images/female.jpeg',
     name: 'Olya',
     date:'Jan 16,2013',
     text: 'Unlike many news organisations, we chose an approach that means all our reporting is free and available for everyone. We need your support to keep delivering quality journalism that’s open and independent. Every reader contribution, however big or small, is so valuable.'

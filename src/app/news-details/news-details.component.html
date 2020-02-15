@@ -1,13 +1,15 @@
 <router-outlet></router-outlet>
+<div class="container">
 <h1>{{title}}</h1>
-<p>By <span>{{author}}</span> Published on {{publishedAt}}</p>
+<p class="time">By <span class="author">{{author}}</span> Published on {{publishedAt}}.</p>
+<hr>
 <img src="{{urlToImage}}" alt="news image">
-<p>{{description}}</p>
+<p class="description">{{description}}</p>
 <div class="buttons">
-    <button class="left">I found this helpful</button>
-    <button class="right">I did not find this helpful</button>
+    <button class="left" ><i class="fa fa-thumbs-up "></i> I found this helpful</button>
+    <button class="right" ><i class="fa fa-thumbs-down "></i> I did not find this helpful</button>
 </div>
-<div>
+<div class="comments">
     <h4>Comments</h4>
     <ul *ngFor="let comment of comments">
         <li>
@@ -20,3 +22,4 @@
 </div>
 <div>join the conversation</div>
 <app-form></app-form>
+</div>
