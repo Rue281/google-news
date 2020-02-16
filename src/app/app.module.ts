@@ -11,6 +11,7 @@ import { NewsDetailsComponent } from './news-details/news-details.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { FormComponent } from './form/form.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 // const routes: Routes = [
 //   {path: '', component: AppComponent},
@@ -25,6 +26,7 @@ import { HeaderComponent } from './header/header.component';
     NewsListComponent,
     FormComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
