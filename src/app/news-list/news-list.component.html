@@ -2,12 +2,12 @@
 <ul>
   <li *ngFor="let article of articles">
   <!-- [style.background-image]="'url(' + article.urlToImage + ')'"> -->
-    <img src="{{article.urlToImage}}">
+    <img src="{{article.urlToImage}}" *ngIf="article.urlToImage">
     <!-- <a [routerLink]="['/details',article.title]"> -->
     <h1 (click)="goToOtherComponent('/details', article.title, article.author, article.description, article.urlToImage, article.publishedAt, article.content)" >{{article.title}}</h1>
   <!-- </a> -->
     <p>{{article.description}}</p>
-    <p>By <span>{{article.author}}</span></p>
+    <p *ngIf="article.author" >By <span >{{article.author}}</span></p>
   </li>
 </ul>
 <!-- <app-news-details [data]="articles"></app-news-details> -->

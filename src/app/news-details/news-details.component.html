@@ -1,9 +1,9 @@
 <router-outlet></router-outlet>
 <div class="container">
 <h1>{{title}}</h1>
-<p class="time">By <span class="author">{{author}}</span> Published on {{publishedAt}}.</p>
+<p class="time"  *ngIf="author">By <span class="author">{{author}}</span> Published on {{publishedAt}}.</p>
 <hr>
-<img src="{{urlToImage}}" alt="news image">
+<img src="{{urlToImage}}" alt="news image" *ngIf="urlToImage">
 <p class="description">{{description}}</p>
 <div class="buttons">
     <button class="left" ><i class="fa fa-thumbs-up "></i> I found this helpful</button>

@@ -4,16 +4,22 @@ h1{
     font-weight: bold;
     margin: 15px 0;
 }
-ul{display: flex;
+ul{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    list-style-type: none;
 }
 li{
     width:30%;
+    height: min-content;
 }
 img{
-    max-width: 100%;
+    width: 100%;
     height: min-content;
     object-fit: cover;
-
+    max-height: 500px;
+}
+span{
+    color: red;
 }
