@@ -27,4 +27,9 @@ export class NewsService {
       console.error(errMsg);
       return Observable.throw(errMsg);
     }
+
+    //post news 
+    post(model: any): Observable<Object> {
+      return this.httpClient.post<Object>(this.apiUrl,model).catch(this.handleError);
+      }
   }

@@ -51,5 +51,6 @@ export class NewsDetailsComponent implements OnInit {
       }
     );
     //console.log(this.router.getCurrentNavigation().extras.state);
+
   }
 }
